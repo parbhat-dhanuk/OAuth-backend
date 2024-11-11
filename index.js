@@ -11,7 +11,7 @@ const port =process.env.PORT
 app.use(express.json())
 
 app.use(cors({
-    origin: 'http://localhost:5173',  // Allow your frontend origin
+    origin: 'https://o-auth-frontend.vercel.app',  // Allow your frontend origin
     credentials: true                         // Allow cookies to be sent
   }));
 connectDB()
